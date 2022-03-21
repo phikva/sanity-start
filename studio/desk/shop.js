@@ -115,17 +115,17 @@ const filtersMenu = S.listItem()
 
 // Our exported "Shop" Menu
 export const shopMenu = S.listItem()
-  .title('Shop')
+  .title('Shop (NOT IN USE)')
   .id('shop')
   .child(
-    S.list()
-      .title('Shop')
-      .items([
-        productsMenu,
-        productVariantsMenu,
-        S.divider(),
-        collectionsMenu,
-        filtersMenu
-      ])
+    // S.list()
+    //   .title('Shop')
+    //   .items([
+    //     productsMenu,
+    //     productVariantsMenu,
+    //     S.divider(),
+    //     collectionsMenu,
+    //     filtersMenu
+    //   ])
   )
   .icon(ShoppingCart)

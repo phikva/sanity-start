@@ -35,8 +35,8 @@ export default () =>
     .items([
       pagesMenu,
       S.divider(),
-      shopMenu,
-      S.divider(),
+      // shopMenu,
+      // S.divider(),
       menusMenu,
       S.divider(),
       settingsMenu,
