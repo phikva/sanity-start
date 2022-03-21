@@ -23,8 +23,8 @@ export const getTypeTitles = types => {
         return 'Freeform'
       case 'accordions':
         return 'Accordions'
-      case 'productCard':
-        return 'Product Card'
+      // case 'productCard':
+      //   return 'Product Card'
       default:
         return null
     }
@@ -39,8 +39,8 @@ export const getTypeSubtitle = block => {
       return getPtPreview(block?.content[0])
     case 'accordions':
       return `${block?.items.length} item(s)`
-    case 'productCard':
-      return block?.product?.title
+    // case 'productCard':
+    //   return block?.product?.title
     default:
       return null
   }
