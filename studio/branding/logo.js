@@ -6,7 +6,7 @@ import './skin.css?raw'
 const Logo = ({ projectName }) => {
   return (
     <Icon isLogin={projectName}>
-      <svg
+      {/* <svg
         xmlns="http://www.w3.org/2000/svg"
         width="215"
         height="150"
@@ -16,7 +16,7 @@ const Logo = ({ projectName }) => {
         <path d="M116.358,148.622H99.609v-9.77l-16.653,9.774-17.234-9.87V.017H82.5v129.2l17.081,9.4V.014h16.782Z" />
         <path d="M131.692,142.211V.012h16.834V130.8l21.184,6.024L158.676,150Z" />
         <path d="M176.9,0h16.785V130.795l21.2,6.028c-3.7,4.417-7.347,8.774-11.035,13.177L176.9,142.22Z" />
-      </svg>
+      </svg> */}
     </Icon>
   )
 }

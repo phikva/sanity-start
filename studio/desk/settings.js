@@ -34,16 +34,16 @@ export const settingsMenu = S.listItem()
           .icon(PaintBucket),
         S.divider(),
         S.listItem()
-          .title('Shop (NOT IN USE)')
-          .child(
-            // S.editor()
-            //   .id('shopSettings')
-            //   .schemaType('shopSettings')
-            //   .documentId('shopSettings')
-          )
-          .icon(ShoppingCart),
-        S.divider(),
-        S.listItem()
+        //   .title('Shop (NOT IN USE)')
+        //   .child(
+        //     // S.editor()
+        //     //   .id('shopSettings')
+        //     //   .schemaType('shopSettings')
+        //     //   .documentId('shopSettings')
+        //   )
+        //   .icon(ShoppingCart),
+        // S.divider(),
+        // S.listItem()
           .title('Header')
           .child(
             S.editor()

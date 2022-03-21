@@ -5,7 +5,7 @@
     "dataset": "production"
   },
   "project": {
-    "name": "HULL",
+    "name": "Sanity template",
     "basePath": "/studio"
   },
   "plugins": [

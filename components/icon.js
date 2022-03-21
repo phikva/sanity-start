@@ -5,7 +5,7 @@ const getIcon = (name, color) => {
     case 'Logo':
       return (
         <>
-          <path
+          {/* <path
             d="M50.741,148.621H33.978V66.509H16.9V148.6H.118V0H16.884V51.518h17.06V.013h16.8Z"
             fill={color}
           />
@@ -20,7 +20,7 @@ const getIcon = (name, color) => {
           <path
             d="M176.9,0h16.785V130.795l21.2,6.028c-3.7,4.417-7.347,8.774-11.035,13.177L176.9,142.22Z"
             fill={color}
-          />
+          /> */}
         </>
       )
     case 'Apple':
