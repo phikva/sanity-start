@@ -1,7 +1,7 @@
 *,
 *::before,
 *::after {
-  border: 0px solid;
+  border: 0px solid ;
   box-sizing: border-box;
 }
 
@@ -11,6 +11,7 @@
 
 html, body {
   min-height: 100%;
+
 }
 
 html {
@@ -22,6 +23,7 @@ html {
 body {
   -webkit-font-smoothing: antialiased;
 }
+
 
 img, picture, video, canvas, svg {
   display: block;

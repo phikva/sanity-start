@@ -189,9 +189,9 @@ const Header = ({ data = {}, isTransparent, onSetup = () => {} }) => {
                 </div>
               </nav>
             </div>
-
+            {/* header--border */}
             <div
-              className={cx('header--border', {
+              className={cx('', {
                 'is-hidden': meganav.isOpen,
               })}
             />

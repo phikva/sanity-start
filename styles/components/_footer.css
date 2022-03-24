@@ -2,7 +2,7 @@
   @apply relative overflow-hidden;
   
   &--grid {
-    @apply grid sm:grid-cols-2 lg:grid-cols-4 gap-1 bg-pageText;
+    @apply grid sm:grid-cols-2 lg:grid-cols-4 bg-pageText;
   }
 
   &--block {
