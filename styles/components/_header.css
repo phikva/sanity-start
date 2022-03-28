@@ -195,9 +195,7 @@ a[href="#content"].skip-link {
       height: calc(var(--vh, 1vh) * 100);
       will-change: transform;
 
-      @media (min-width: 421px) {
-        border-right-width: 1px;
-      }
+    
 
       &--backdrop {
         @apply fixed inset-0 z-4 bg-black bg-opacity-40 pointer-events-none opacity-0;

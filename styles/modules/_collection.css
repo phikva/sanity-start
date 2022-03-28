@@ -1,8 +1,8 @@
 .collection {
-  @apply border-b;
+  
   
   &--tools {
-    @apply sticky top-[var(--headerHeight)] z-2 flex justify-between bg-pageBG border-b;
+    @apply sticky top-[var(--headerHeight)] z-2 flex justify-between bg-pageBG ;
   }
 
   &--content {

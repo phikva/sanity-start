@@ -29,7 +29,7 @@
 
   .has-indicator {
     &::before {
-      @apply inline-block mr-8 rounded-full border w-10 h-10;
+      @apply inline-block mr-8 rounded-full w-10 h-10;
       content: "";
     }
 
