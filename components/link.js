@@ -6,6 +6,7 @@ import { getStaticRoute, getDynamicRoute } from '@lib/routes'
 
 import { useProductCount } from '@lib/context'
 
+
 const Link = ({ link, children, ...rest }) => {
   const isLink = !!link.url
   const isStatic = getStaticRoute(link.page?.type)
@@ -62,18 +63,25 @@ const Link = ({ link, children, ...rest }) => {
                   'is-large': link.styles?.isLarge,
                   'is-block': link.styles?.isBlock,
                 })
+             
               : null
           }
+         
           {...rest}
-        >
+          
+        > 
           {link.title || children}
-
+          
           {isCollection && (
             <span aria-hidden="true" className="collection-count">
               {collectionCount}
+              
             </span>
+            
           )}
+         arrow
         </a>
+        
       </NextLink>
     )
   }

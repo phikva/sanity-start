@@ -198,7 +198,7 @@ a {
 figure {
   .rc & {
     &:not(:last-child) {
-      @apply mb-24;
+      @apply mb-0;
     }
   }
 }
