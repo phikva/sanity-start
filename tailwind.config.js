@@ -51,6 +51,11 @@ module.exports = {
       pageBG: 'var(--pageBG)',
       pageText: 'var(--pageText)',
     },
+    // extend: {
+    //   height: {
+    //     '400': '50rem',
+    //   }
+    // },
     fontSize: new Array(201)
       .fill()
       .map((_, i) => i)
@@ -105,6 +110,8 @@ module.exports = {
         prose: '100ch',
       },
     },
+   
+ 
   },
   plugins: [],
 }
