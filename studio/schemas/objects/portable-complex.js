@@ -140,7 +140,7 @@ export default {
                     type: 'string',
                     options: {
                       list: [
-                        { title: 'Default', value: '' },
+                        { title: 'Default Icon-arrow', value: 'is-arrow' },
                         { title: 'Primary', value: 'is-primary' },
                         { title: 'White', value: 'is-white' }
                       ],

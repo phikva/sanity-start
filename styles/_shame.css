@@ -1,5 +1,109 @@
 /* put your shameful styles here */
 
+
 .cart-toggle {
     display: none;
+}
+
+.btn.is-arrow {
+   /* all: unset; */
+   cursor: pointer; 
+}
+
+.btn.is-arrow:hover {
+    opacity: 0.4;
+}
+
+
+/* arrow icon text link */
+.btn.is-arrow {
+    box-sizing: border-box;
+    position: relative;
+    transform: scale(var(--ggs,1));
+
+    border-radius: 0;
+    border: none;
+    text-decoration-line: underline;
+    padding: 0;
+    font-size:  initial;
+}
+
+.btn.is-arrow::after,
+.btn.is-arrow::before {
+    content: "";
+    display: block;
+    box-sizing: border-box;
+    position: absolute;
+    right: -3rem;
+   
+    
+}
+.btn.is-arrow::after {
+    width: 8px;
+    height: 8px;
+    border-top: 2px solid;
+    border-right: 2px solid;
+    transform: rotate(45deg);
+    bottom: 5px
+}
+
+.btn.is-arrow::before {
+    width: 16px;
+    height: 2px;
+    bottom: 8px;
+    background: currentColor
+}
+
+
+/* arrow icon footer link*/
+
+
+.menu-footer a  {
+    text-decoration-line: underline;
+ 
+}
+
+.menu-footer a {
+    box-sizing: border-box;
+    position: relative;
+    transform: scale(var(--ggs,1));
+
+    border-radius: 0;
+    border: none;
+    text-decoration-line: underline;
+    padding: 0;
+    font-size:  initial;
+}
+.menu-footer a::after,
+.menu-footer a::before {
+    content: "";
+    display: block;
+    box-sizing: border-box;
+    position: absolute;
+    right: -3rem;
+}
+.menu-footer a::after {
+    width: 10px;
+    height: 10px;
+    border-top: 2px solid;
+    border-right: 2px solid;
+    transform: rotate(0deg);
+    bottom: 12px
+}
+.menu-footer a::before {
+    transform: rotate(135deg);
+    width: 16px;
+    height: 2px;
+    bottom: 13.9px;
+    background: currentColor
+}
+
+/* last child not arrow*/
+.menu-footer li:last-child a {
+    all: unset;
+    display: inline-block;
+padding-top: 0.8rem;
+padding-bottom: 0.8rem;
+font-size: 1.6rem;
+text-decoration-line: underline;
 }

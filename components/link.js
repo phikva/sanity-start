@@ -79,7 +79,7 @@ const Link = ({ link, children, ...rest }) => {
             </span>
             
           )}
-         arrow
+     
         </a>
         
       </NextLink>
