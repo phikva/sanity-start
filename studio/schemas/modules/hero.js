@@ -67,6 +67,7 @@ export default {
       }
     }
   ],
+  
   preview: {
     select: {
       photo: 'photo',

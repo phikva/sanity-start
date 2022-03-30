@@ -3,8 +3,8 @@ import { TextAlignLeft } from 'phosphor-react'
 import { getPtPreview } from '../../lib/helpers'
 
 export default {
-  title: 'Freeform',
-  name: 'freeform',
+  title: 'Freeform Hero',
+  name: 'freeformHero',
   type: 'object',
   icon: TextAlignLeft,
   fieldsets: [
@@ -69,7 +69,7 @@ export default {
     },
     prepare({ content }) {
       return {
-        title: 'Freeform',
+        title: 'Freeform Hero',
         subtitle: getPtPreview(content)
       }
     }

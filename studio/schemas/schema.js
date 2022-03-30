@@ -54,6 +54,7 @@ import simplePortableText from './objects/portable-simple'
 import complexPortableText from './objects/portable-complex'
 
 import freeform from './objects/freeform'
+import freeformHero from './objects/freeformHero'
 import accordions from './objects/accordions'
 import accordion from './objects/accordion'
 // import productCard from './objects/product-card'
@@ -126,6 +127,7 @@ export default createSchema({
     freeform,
     accordions,
     accordion,
+    freeformHero,
     // productCard,
 
     participant

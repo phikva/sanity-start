@@ -1,12 +1,12 @@
 .btn {
   /* default style button */
-  @apply clean-btn inline-block relative bg-pageBG px-20 py-9 text-center rounded-full border font-sans font-semibold text-12 leading-125 transition-colors;
+  @apply clean-btn inline-block relative px-20 py-9 text-center rounded-full border font-sans font-semibold text-12 leading-125 transition-colors;
 
   /* default: hover */
   &:not(.is-primary):not(.is-white):not(.is-text):not(.is-disabled):not(.is-soldout) {
     &.is-active,
     &:hover {
-      @apply bg-pageText border-pageText text-pageBG;
+      /* @apply bg-pageText border-pageText text-pageBG; */
     }
   }
 

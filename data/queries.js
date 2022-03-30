@@ -134,6 +134,15 @@ export const blocks = `
     textAlign,
     maxWidth
   },
+  _type == 'freeformHero' => {
+    _type,
+    _key,
+    content[]{
+      ${ptContent}
+    },
+    textAlign,
+    maxWidth
+  },
   _type == 'accordions' => {
     _type,
     _key,
