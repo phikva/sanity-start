@@ -73,6 +73,7 @@
     text-decoration-line: underline;
     padding: 0;
     font-size:  initial;
+    font-weight: 600;
 }
 .menu-footer a::after,
 .menu-footer a::before {
@@ -83,18 +84,19 @@
     right: -3rem;
 }
 .menu-footer a::after {
-    width: 10px;
-    height: 10px;
+    width: 1.5rem;
+    height: 1.5rem;
     border-top: 2px solid;
     border-right: 2px solid;
     transform: rotate(0deg);
-    bottom: 12px
+    bottom: 15px;
+    right: -2.85rem;
 }
 .menu-footer a::before {
     transform: rotate(135deg);
-    width: 16px;
+    width: 2rem;
     height: 2px;
-    bottom: 13.9px;
+    bottom: 1.55rem;
     background: currentColor
 }
 
@@ -102,8 +104,8 @@
 .menu-footer li:last-child a {
     all: unset;
     display: inline-block;
-padding-top: 0.8rem;
+padding-top: 2rem;
 padding-bottom: 0.8rem;
-font-size: 1.6rem;
+font-size: 20px;
 text-decoration-line: underline;
 }

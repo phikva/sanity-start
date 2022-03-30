@@ -2,7 +2,7 @@
 
 @layer base {
   html {
-    @apply bg-pageText text-[10px];
+    @apply bg-pageText text-[16px];
   }
 
   html,
@@ -14,11 +14,11 @@
   }
 
   body {
-    @apply bg-pageBG text-pageText font-sans leading-100;
+    @apply bg-pageBG text-pageText font-Neue leading-100;
   }
 
   p {
-    @apply m-0 text-16 leading-150;
+    @apply m-0 text-14 leading-150;
   }
 
   strong {
@@ -32,22 +32,22 @@
   /* Headlines */
   h1,
   .is-h1 {
-    @apply m-0 text-48 font-normal leading-125;
+    @apply m-0 text-25 font-normal leading-125;
   }
 
   h2,
   .is-h2 {
-    @apply m-0 text-36 font-normal leading-125;
+    @apply m-0 text-25 font-normal leading-125;
   }
 
   h3,
   .is-h3 {
-    @apply m-0 text-30 font-normal leading-125;
+    @apply m-0 text-25 font-normal leading-125;
   }
 
   h4,
   .is-h4 {
-    @apply m-0 text-24 font-normal leading-135;
+    @apply m-0 text-25 font-normal leading-135;
   }
 
   h5 {
@@ -55,7 +55,7 @@
   }
 
   h6 {
-    @apply m-0 text-12 font-normal leading-125;
+    @apply m-0 text-25 font-normal leading-125;
   }
 
   /* Links */
@@ -187,10 +187,19 @@ a {
   .rc & {
     &:not(.btn) {
       @apply hover:opacity-40;
-      background-image: linear-gradient(var(--pageText), var(--pageText));
+      /* background-image: linear-gradient(var(--pageText), var(--pageText)); */
       background-position: 0% 100%;
       background-repeat: no-repeat;
       background-size: 100% 1px;
+    }
+  }
+}
+
+.hero--content a {
+  .rc & {
+    &:not(.btn) {
+      @apply hover:opacity-40 ;
+      
     }
   }
 }

@@ -1,7 +1,7 @@
 .hero {
   @apply grid relative overflow-hidden xs:min-h-fit lg:xs:h-screen;
   min-height: calc(var(--vh, 1vh) * 50);
-  /* max-height: 50vh; */
+  max-height: 95vh;
 
   /* @media (max-height: 500px) {
     min-height: 300px;
@@ -26,8 +26,9 @@
   }
 
   &--content {
-    @apply w-full max-w-5xl mx-auto px-4 text-center text-white;
+    @apply w-full max-w-5xl mx-auto px-4 text-left text-pageText absolute bottom-0;
     padding-top: calc(var(--headerHeight) + 2rem);
-    padding-bottom: var(--headerHeight);
+    /* padding-bottom: var(--headerHeight); */
   }
+  
 }

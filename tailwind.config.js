@@ -94,6 +94,8 @@ module.exports = {
     extend: {
       fontFamily: {
         inherit: 'inherit',
+        'Neue': ['Neue Haas Grotesk Display Pro', 'sans-serif'] 
+     
       },
       maxWidth: {
         xs: '20rem',
