@@ -5,6 +5,7 @@ import ProductCard from '@components/product-card'
 import Freeform from '@components/freeform'
 import AccordionList from '@components/accordion-list'
 import FreeformHero from '@components/freeformHero'
+import Hero from './hero'
 
 
 const Grid = ({ data = {} }) => {
@@ -83,6 +84,8 @@ const GridBlock = ({ block }) => {
       return <AccordionList data={block} />
       case 'freeformHero':
         return <FreeformHero data={block} />
+        case 'hero':
+        return <Hero data={block} />
   
     // case 'productCard':
     //   return (

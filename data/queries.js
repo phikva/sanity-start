@@ -125,6 +125,27 @@ export const product = `
 
 // Construct our "blocks" GROQ
 export const blocks = `
+_type == 'hero' => {
+  _type,
+  _key,
+  content[]{
+    ${ptContent}
+  },
+  bgType,
+  photos{
+    ...,
+    mobilePhoto{
+      ${imageMeta}
+    },
+    desktopPhoto{
+      ${imageMeta}
+    }
+  },
+  video{
+    id,
+    title
+  }
+},
   _type == 'freeform' => {
     _type,
     _key,

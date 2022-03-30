@@ -27,7 +27,8 @@ export default {
       of: [
         { type: 'freeform' },
         { type: 'accordions' },
-        { type: 'freeformHero' }
+        { type: 'freeformHero' },
+        { type: 'hero' }
       
       ]
     }
