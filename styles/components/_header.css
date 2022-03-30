@@ -25,7 +25,7 @@ a[href="#content"].skip-link {
     }
 
     .has-bg & {
-      @apply bg-pageBG;
+      @apply bg-transparent delay-100;
     }
 
     .is-white & {
@@ -42,7 +42,7 @@ a[href="#content"].skip-link {
     transition: opacity 0s .6s linear;
 
     .is-overlay:not(.has-bg) & {
-      transition-duration: .4s;
+      transition-duration: .5s;
       transition-delay: 0s;
     }
 
@@ -71,7 +71,7 @@ a[href="#content"].skip-link {
 }
 
 .menu-toggle {
-  @apply sm:hidden absolute inset-y-0 right-0 z-6 clean-btn p-10 bg-transparent;
+  @apply sm:hidden absolute inset-y-0 right-0 z-6 clean-btn p-10 bg-transparent text-pageText;
 
   .is-overlay:not(.has-bg) & {
     @apply transition-colors duration-300;

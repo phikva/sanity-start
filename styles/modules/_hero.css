@@ -1,10 +1,11 @@
 .hero {
-  @apply grid relative overflow-hidden min-h-screen;
-  min-height: calc(var(--vh, 1vh) * 100);
+  @apply grid relative overflow-hidden xs:min-h-fit lg:xs:h-screen;
+  min-height: calc(var(--vh, 1vh) * 50);
+  /* max-height: 50vh; */
 
-  @media (max-height: 500px) {
-    min-height: 500px;
-  }
+  /* @media (max-height: 500px) {
+    min-height: 300px;
+  } */
   
   &--bg {
     @apply relative w-full  h-full;

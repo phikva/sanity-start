@@ -95,7 +95,7 @@ const MegaNavigation = ({ items = [], headerHeight }) => {
           })}
         </div>
       </FocusTrap>
-      <div
+      {/* <div
         className={cx('mega-nav--bg')}
         style={{
           '--h': meganav.isOpen ? activeNavRect?.height + headerHeight : 0,
@@ -103,9 +103,9 @@ const MegaNavigation = ({ items = [], headerHeight }) => {
             meganav.isOpen ? activeNavRect?.height + headerHeight : 0
           }px`,
         }}
-      />
+      /> */}
 
-      <div className="mega-nav--border" />
+      {/* <div className="mega-nav--border" /> */}
 
       <div
         className={cx('mega-nav--backdrop', {
