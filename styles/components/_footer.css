@@ -2,11 +2,11 @@
   @apply relative overflow-hidden;
   
   &--grid {
-    @apply grid sm:grid-cols-2 lg:grid-cols-4 bg-pageText;
+    @apply grid sm:grid-cols-1 md:grid-cols-2 bg-pageText;
   }
 
   &--block {
-    @apply flex flex-col p-32 bg-pageBG text-center lg:text-left;
+    @apply flex flex-col p-10 bg-pageBG text-left lg:text-left;
   }
 
   .form {
@@ -14,7 +14,7 @@
   }
 
   .menu-footer {
-    @apply flex flex-col lg:mb-32;
+    @apply flex flex-col;
 
     a {
       @apply inline-block py-8 text-16 hover:opacity-40;
@@ -22,7 +22,7 @@
   }
 
   .menu-social {
-    @apply inline-flex flex-wrap my-16 mx-auto lg:mt-0 lg:mx-0;
+    @apply inline-flex flex-wrap my-16  md:mt-110 lg:mx-0;
 
     a {
       @apply block w-36 h-36 hover:opacity-40;
@@ -34,7 +34,7 @@
   }
 
   &--extras {
-    @apply mt-auto;
+    @apply mt-0;
   }
 
   &--disclaimer {

@@ -139,6 +139,7 @@ const Icon = (props) => {
       aria-labelledby={`${name.replace(/\s/g, '').toLowerCase()}-${id}`}
       className={className || 'icon'}
     >
+      
       <title id={`${name.replace(/\s/g, '').toLowerCase()}-${id}`}>
         {name}
       </title>

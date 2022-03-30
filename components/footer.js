@@ -32,6 +32,7 @@ const Footer = ({ data = {} }) => {
                       rel="noopener noreferrer"
                     >
                       <Icon name={link.icon} />
+
                     </a>
                   )
                 })}

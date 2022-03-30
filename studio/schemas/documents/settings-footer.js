@@ -5,12 +5,12 @@ export default {
   name: 'footerSettings',
   type: 'document',
   groups: [
-    {
-      title: 'Block 1',
-      name: 'column1',
-      icon: PaperPlaneTilt,
-      default: true
-    },
+    // {
+    //   title: 'Block 1',
+    //   name: 'column1',
+    //   icon: PaperPlaneTilt,
+    //   default: true
+    // },
     {
       title: 'Block 2',
       name: 'column2',
@@ -28,18 +28,18 @@ export default {
     }
   ],
   fields: [
-    {
-      title: 'Block Title',
-      name: 'blockTitle1',
-      type: 'string',
-      group: 'column1'
-    },
-    {
-      title: 'Newsletter',
-      name: 'newsletter',
-      type: 'newsletter',
-      group: 'column1'
-    },
+    // {
+    //   title: 'Block Title',
+    //   name: 'blockTitle1',
+    //   type: 'string',
+    //   group: 'column1'
+    // },
+    // {
+    //   title: 'Newsletter',
+    //   name: 'newsletter',
+    //   type: 'newsletter',
+    //   group: 'column1'
+    // },
     {
       title: 'Block Title',
       name: 'blockTitle2',
