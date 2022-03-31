@@ -14,11 +14,11 @@ a[href="#content"].skip-link {
   }
 
   &--outer {
-    @apply relative;
+    @apply relative ;
   }
   
   &--inner {
-    @apply relative z-2 p-4 sm:p-16 bg-pageBG;
+    @apply relative px-10 sm:py-10 md:py-10 lg:py-10 z-2 bg-pageBG ;
 
     .is-overlay & {
       @apply bg-transparent transition-colors duration-300;
@@ -29,12 +29,15 @@ a[href="#content"].skip-link {
     }
 
     .is-white & {
-      @apply text-white delay-75;
+      @apply text-pageText md:text-white delay-75;
+      .logo {
+        @apply text-pageText;
+      }
     }
   }
   
   &--content {
-    @apply flex flex-col items-center relative z-3;
+    @apply flex flex-col justify-start relative z-3;
   }
 
   &--border {
@@ -59,19 +62,21 @@ a[href="#content"].skip-link {
 }
 
 .logo {
-  @apply flex flex-col relative z-1;
+  @apply pt-10 sm:pt-0 block relative z-1 w-fit;
 
   &--link {
-    @apply clean-btn block p-8 bg-transparent;
+    @apply clean-btn block bg-transparent p-0 ;
 
-    svg {
-      @apply block fill-current w-auto h-48;
+    .icon{
+      @apply fill-current w-auto h-100;
+
     }
+  
   }
 }
 
 .menu-toggle {
-  @apply sm:hidden absolute inset-y-0 right-0 z-6 clean-btn p-10 bg-transparent text-pageText;
+  @apply sm:hidden absolute top-12 right-0 z-6 clean-btn p-0 bg-transparent text-pageText;
 
   .is-overlay:not(.has-bg) & {
     @apply transition-colors duration-300;
@@ -83,13 +88,13 @@ a[href="#content"].skip-link {
 }
 
 .hamburger {
-  @apply relative flex flex-col items-center justify-center mx-auto w-30;
+  @apply relative flex flex-col items-center justify-center mx-auto w-25;
 
   &::before,
   &::after {
-    @apply block relative w-full h-0 border-t;
+    @apply block relative w-full h-0 border-t-2;
     content: "";
-    margin: 6px 0;
+    margin: 4px 0;
     transition: opacity 0s .2s linear, transform .2s .2s ease-out;
 
     .is-open & {
@@ -111,7 +116,7 @@ a[href="#content"].skip-link {
   }
 
   &--icon {
-    @apply block relative w-full h-0 border-t;
+    @apply block relative w-full h-0 border-t-2;
     transition: border 0s .2s linear;
 
     .is-open & {
@@ -167,12 +172,15 @@ a[href="#content"].skip-link {
     .menu-right {
       @apply flex items-center;
     }
+    .menu-right {
+      @apply relative bottom-42;
+    }
 
     ul {
       @apply flex;
 
       li {
-        @apply mx-8;
+        @apply mx-8 mr-0;
       }
 
       button {
@@ -182,7 +190,7 @@ a[href="#content"].skip-link {
 
       a,
       button {
-        @apply block p-8 text-14 leading-150 font-semibold uppercase;
+        @apply block  text-13 leading-150 font-normal uppercase;
       }
     }
   }
@@ -208,7 +216,7 @@ a[href="#content"].skip-link {
       }
 
       &--inner {
-        @apply flex-1 flex flex-col overflow-y-scroll px-16 pb-16;
+        @apply flex-1 flex flex-col px-16 pb-16;
         padding-top: calc(var(--headerHeight, 10rem) + 2.5rem);
       }
 
@@ -229,7 +237,7 @@ a[href="#content"].skip-link {
 
         a,
         button {
-          @apply text-36 leading-150;
+          @apply text-25 leading-150;
         }
       }
 

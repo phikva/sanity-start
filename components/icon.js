@@ -5,22 +5,29 @@ const getIcon = (name, color) => {
     case 'Logo':
       return (
         <>
-          {/* <path
-            d="M50.741,148.621H33.978V66.509H16.9V148.6H.118V0H16.884V51.518h17.06V.013h16.8Z"
-            fill={color}
-          />
-          <path
-            d="M116.358,148.622H99.609v-9.77l-16.653,9.774-17.234-9.87V.017H82.5v129.2l17.081,9.4V.014h16.782Z"
-            fill={color}
-          />
-          <path
-            d="M131.692,142.211V.012h16.834V130.8l21.184,6.024L158.676,150Z"
-            fill={color}
-          />
-          <path
-            d="M176.9,0h16.785V130.795l21.2,6.028c-3.7,4.417-7.347,8.774-11.035,13.177L176.9,142.22Z"
-            fill={color}
-          /> */}
+      
+            <text
+              id="Leopold_Prytz_Roze"
+              data-name="Leopold Prytz Roze"
+              transform="translate(1 45)"
+              font-size="15"
+              font-family="NHaasGroteskDSPro-55Rg, Neue Haas Grotesk Display Pro"
+            >
+              <tspan x="0" y="0">
+                Leopold Prytz Roze
+              </tspan>
+            </text>
+            <text
+              id="MATKREATØR"
+              transform="translate(0 25)"
+              font-size="30"
+              font-family="NHaasGroteskDSPro-75Bd, Neue Haas Grotesk Display Pro"
+            >
+              <tspan x="0" y="0">
+                MATKREATØR
+              </tspan>
+            </text>
+         
         </>
       )
     case 'Apple':
@@ -139,7 +146,6 @@ const Icon = (props) => {
       aria-labelledby={`${name.replace(/\s/g, '').toLowerCase()}-${id}`}
       className={className || 'icon'}
     >
-      
       <title id={`${name.replace(/\s/g, '').toLowerCase()}-${id}`}>
         {name}
       </title>
