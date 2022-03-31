@@ -45,7 +45,8 @@ const Footer = ({ data = {} }) => {
                 {/* <ThemeSwitch /> */}
 
                 <div className="footer--disclaimer">
-                  <p>&copy; {new Date().getFullYear()}. All Rights Reserved.</p>
+                  <p>&copy; {new Date().getFullYear()}. All Rights Reserved. </p>
+                  <p>Created by PhilipKvam.no</p>
                 </div>
               </div>
             )}

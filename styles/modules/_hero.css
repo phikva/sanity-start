@@ -29,6 +29,8 @@
     @apply w-full max-w-5xl mx-auto text-left text-pageText absolute bottom-0;
     padding-top: calc(var(--headerHeight) + 2rem);
     /* padding-bottom: var(--headerHeight); */
+
+  
   }
   
 }

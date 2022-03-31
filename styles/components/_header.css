@@ -18,7 +18,7 @@ a[href="#content"].skip-link {
   }
   
   &--inner {
-    @apply relative px-10 sm:py-10 md:py-10 lg:py-10 z-2 bg-pageBG ;
+    @apply relative px-10 sm:py-10 md:py-10 lg:py-10 z-2 bg-transparent ;
 
     .is-overlay & {
       @apply bg-transparent transition-colors duration-300;
@@ -29,7 +29,7 @@ a[href="#content"].skip-link {
     }
 
     .is-white & {
-      @apply text-pageText md:text-white delay-75;
+      @apply text-pageText  delay-75;
       .logo {
         @apply text-pageText;
       }
@@ -118,6 +118,7 @@ a[href="#content"].skip-link {
   &--icon {
     @apply block relative w-full h-0 border-t-2;
     transition: border 0s .2s linear;
+    border: none;
 
     .is-open & {
       @apply border-transparent;
@@ -125,7 +126,8 @@ a[href="#content"].skip-link {
 
     &::before,
     &::after {
-      @apply block absolute w-full h-0 border-t opacity-0;
+      @apply block absolute w-full h-0 border-t-2 opacity-0;
+      
       content: "";
       top: calc(50% - .5px);
       transition: opacity 0s .2s, transform .2s ease-out;
@@ -180,7 +182,7 @@ a[href="#content"].skip-link {
       @apply flex;
 
       li {
-        @apply mx-8 mr-0;
+        @apply mx-10 mr-0;
       }
 
       button {
@@ -190,7 +192,7 @@ a[href="#content"].skip-link {
 
       a,
       button {
-        @apply block  text-13 leading-150 font-normal uppercase;
+        @apply block  text-19 leading-150  lowercase;
       }
     }
   }
@@ -199,7 +201,7 @@ a[href="#content"].skip-link {
     @apply sm:hidden flex justify-end items-center absolute inset-0;
 
     .menu-mobile {
-      @apply fixed top-0 left-0 w-full max-w-[420px] h-screen z-5 flex flex-col bg-pageBG text-pageText;
+      @apply fixed top-0 left-0 w-full overflow-y-auto h-screen z-5 flex flex-col bg-pageBG text-pageText;
       height: calc(var(--vh, 1vh) * 100);
       will-change: transform;
 
@@ -207,7 +209,7 @@ a[href="#content"].skip-link {
 
       &--backdrop {
         @apply fixed inset-0 z-4 bg-black bg-opacity-40 pointer-events-none opacity-0;
-        transition: opacity .15s linear;
+        transition: opacity 0.2s ease-in-out;
 
         &.is-active {
           @apply pointer-events-auto opacity-100;
@@ -216,8 +218,8 @@ a[href="#content"].skip-link {
       }
 
       &--inner {
-        @apply flex-1 flex flex-col px-16 pb-16;
-        padding-top: calc(var(--headerHeight, 10rem) + 2.5rem);
+        @apply flex-1 flex flex-col px-10 py-10;
+        /* padding-top: calc(var(--headerHeight, 10rem) + 2.5rem); */
       }
 
       button {
@@ -227,30 +229,36 @@ a[href="#content"].skip-link {
 
       a,
       button {
-        @apply block p-0;
+        @apply p-0 lowercase;
       }
 
       &--primary {
         ul {
-          @apply flex flex-col;
+          @apply flex flex-col absolute top-10;
+        }
+        li {
+          @apply mb-5;
         }
 
         a,
         button {
-          @apply text-25 leading-150;
+          @apply text-20 leading-120;
         }
       }
 
       &--secondary {
-        @apply pt-32;
+        @apply absolute bottom-10;
 
         ul {
           @apply flex flex-col;
         }
+        li {
+          /* @apply ; */
+        }
 
         a,
         button {
-          @apply text-20 leading-150;
+          @apply text-20 leading-150 capitalize;
         }
       }
 

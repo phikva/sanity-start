@@ -17,12 +17,12 @@
     @apply flex flex-col;
 
     a {
-      @apply inline-block py-8 text-20 xs:text-25 hover:opacity-40;
+      @apply inline-block pb-10 text-20 hover:opacity-40;
     }
   }
 
   .menu-social {
-    @apply inline-flex flex-wrap my-16  md:mt-174 lg:mx-0;
+    @apply inline-flex flex-wrap  lg:mx-0 md:absolute bottom-40;
 
     a {
       @apply block w-36 h-36 hover:opacity-40;
@@ -34,12 +34,12 @@
   }
 
   &--extras {
-    @apply mt-0;
+    @apply mt-0 md:absolute bottom-10;
   }
 
   &--disclaimer {
     p {
-      @apply text-10;
+      @apply text-10 mb-0;
     }
   }
 }

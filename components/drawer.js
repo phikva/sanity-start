@@ -53,12 +53,13 @@ const Drawer = ({
             variants={{
               show: {
                 x: '0%',
+                
               },
               hide: {
                 x: direction === 'right' ? '100%' : '-100%',
               },
             }}
-            transition={{ duration: 0.6, ease: [0.16, 1, 0.3, 1] }}
+            transition={{ duration: 0.6, ease: [0.6, 0.01, -0.05, 0.95] }}
             className={cx('drawer is-inverted', className, {
               'is-right': direction === 'right',
               'is-left': direction === 'left',

@@ -20,7 +20,6 @@
     box-sizing: border-box;
     position: relative;
     transform: scale(var(--ggs,1));
-
     border-radius: 0;
     border: none;
     text-decoration-line: underline;
@@ -57,7 +56,9 @@
 
 /* arrow icon footer link*/
 
-
+.menu-footer {
+    margin-top: 5rem;
+}
 .menu-footer a  {
     text-decoration-line: underline;
  
@@ -89,14 +90,14 @@
     border-top: 2px solid;
     border-right: 2px solid;
     transform: rotate(0deg);
-    bottom: 15px;
+    bottom: 20px;
     right: -2.85rem;
 }
 .menu-footer a::before {
     transform: rotate(135deg);
     width: 2rem;
     height: 2px;
-    bottom: 1.55rem;
+    bottom: 1.85rem;
     background: currentColor
 }
 
@@ -104,8 +105,71 @@
 .menu-footer li:last-child a {
     all: unset;
     display: inline-block;
-padding-top: 2rem;
-padding-bottom: 0.8rem;
 font-size: 20px;
 text-decoration-line: underline;
+}
+
+/* arrow icon mobile secondary link*/
+
+.menu-mobile--secondary a  {
+    text-decoration-line: underline;
+ 
+}
+
+.menu-mobile--secondary a {
+    box-sizing: border-box;
+    position: relative;
+    transform: scale(var(--ggs,1));
+
+    border-radius: 0;
+    border: none;
+    text-decoration-line: underline;
+    padding: 0;
+    font-size:  initial;
+    font-weight: 600;
+}
+.menu-mobile--secondary a::after,
+.menu-mobile--secondary a::before {
+    content: "";
+    display: block;
+    box-sizing: border-box;
+    position: absolute;
+    right: -3rem;
+}
+.menu-mobile--secondary a::after {
+    width: 1.5rem;
+    height: 1.5rem;
+    border-top: 2px solid;
+    border-right: 2px solid;
+    transform: rotate(0deg);
+    bottom: 10px;
+    right: -2.85rem;
+}
+.menu-mobile--secondary a::before {
+    transform: rotate(135deg);
+    width: 2rem;
+    height: 2px;
+    bottom: 1.25rem;
+    background: currentColor
+}
+
+/* last child not arrow*/
+.menu-mobile--secondary li:last-child a {
+    all: unset;
+    display: inline-block;
+font-size: 20px;
+text-decoration-line: underline;
+padding-top: 0.8rem;
+}
+.menu-mobile--secondary li:last-child a::before,
+.menu-mobile--secondary li:last-child a::after {
+    all: unset;
+}
+/* logo text */
+
+#MATKREATØR {
+    font-weight: 600;
+}
+#Leopold_Prytz_Roze {
+    font-weight: 100;
 }
