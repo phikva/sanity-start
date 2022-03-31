@@ -18,7 +18,7 @@
   }
 
   p {
-    @apply mb-20 text-14 leading-150;
+    @apply mb-20 mt-0 text-14 leading-150;
   }
 
   strong {
@@ -32,30 +32,30 @@
   /* Headlines */
   h1,
   .is-h1 {
-    @apply m-0 text-25 font-normal ;
+    @apply  m-0 text-25 font-normal ;
   }
 
   h2,
   .is-h2 {
-    @apply m-0 text-25 font-normal;
+    @apply xxs:text-19 m-0 md:text-25 font-normal leading-135;
   }
 
   h3,
   .is-h3 {
-    @apply m-0 text-20 font-normal;
+    @apply xxs:text-12 m-0 md:text-15 font-normal;
   }
 
   h4,
   .is-h4 {
-    @apply m-0 text-20 font-normal leading-135;
+    @apply m-0 text-13 font-normal leading-135;
   }
 
   h5 {
-    @apply m-0 text-20 font-normal leading-125;
+    @apply m-0 text-13 font-normal leading-125;
   }
 
   h6 {
-    @apply m-0 text-20 font-normal leading-125;
+    @apply m-0 text-13 font-normal leading-125;
   }
 
   /* Links */
@@ -74,7 +74,7 @@
 
   /* Misc. */
   hr {
-    @apply my-60 mx-0 border-0 h-1 bg-pageText;
+    @apply mt-60 mx-0 border-opacity-10 h-1 bg-pageBG;
   }
   
   ::-moz-selection {
@@ -113,27 +113,29 @@ details {
     }
   }
 }
-
+p:first-of-type {
+  @apply mb-0;
+}
 p {
-  &:last-child {
-    /* @apply mb-0; */
+  &:not(:first){
+    @apply mb-0 mt-10;
   }
 }
 
 ul {
   .rc & {
-    @apply pl-8 text-16 leading-150;
+    @apply pl-10 text-12 mb-10 leading-150;
 
     &:not(:last-child) {
-      @apply mb-6;
+      @apply my-10;
     }
     
     li {
       @apply mb-1;
       
       &::before {
-        content: "+";
-        @apply inline-block relative -ml-4 w-4;
+        content: "-";
+        @apply inline-block relative -ml-4 w-10;
       }
     }
   }
@@ -220,6 +222,6 @@ figure {
 
 hr {
   &:last-child {
-    @apply mb-0;
+    /* @apply mb-0; */
   }
 }
