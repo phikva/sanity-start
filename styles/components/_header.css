@@ -62,8 +62,11 @@ a[href="#content"].skip-link {
 }
 
 .logo {
-  @apply pt-10 sm:pt-0 block relative z-1 w-fit;
-
+  @apply pt-10 sm:pt-0 block relative z-5 w-fit;
+  transition: transform 250ms;
+  &:hover {
+    transform: translateY(-10px);
+  }
   &--link {
     @apply clean-btn block bg-transparent p-0 ;
 
@@ -88,7 +91,7 @@ a[href="#content"].skip-link {
 }
 
 .hamburger {
-  @apply relative flex flex-col items-center justify-center mx-auto w-25;
+  @apply relative flex flex-col items-center justify-center mx-auto w-25 z-5;
 
   &::before,
   &::after {
@@ -175,14 +178,14 @@ a[href="#content"].skip-link {
       @apply flex items-center;
     }
     .menu-right {
-      @apply relative bottom-42;
+      @apply relative bottom-42 z-5;
     }
 
     ul {
       @apply flex;
 
       li {
-        @apply mx-10 mr-0;
+        @apply ml-40;
       }
 
       button {
@@ -193,7 +196,14 @@ a[href="#content"].skip-link {
       a,
       button {
         @apply block  text-19 font-Neue leading-150  lowercase;
+        transition: transform 250ms;
+        &:hover {
+          transform: translateY(-10px);
+        }
       }
+    }
+    .is-active a {
+      text-decoration-line: underline !important;
     }
   }
 
@@ -231,6 +241,9 @@ a[href="#content"].skip-link {
       button {
         @apply p-0 lowercase;
       }
+      .is-active a {
+        text-decoration-line: underline !important;
+      }
 
       &--primary {
         ul {
@@ -243,6 +256,7 @@ a[href="#content"].skip-link {
         a,
         button {
           @apply text-20 leading-120;
+          
         }
       }
 
@@ -254,6 +268,7 @@ a[href="#content"].skip-link {
         }
         li {
           /* @apply ; */
+          
         }
 
         a,

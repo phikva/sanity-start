@@ -26,6 +26,7 @@
     padding: 0;
     margin-top: 1rem;
     /* font-size:  initial; */
+    font-size: inherit;
     font-weight:400;
 }
 
@@ -77,6 +78,13 @@
     padding: 0;
     font-size:  initial;
     font-weight: 600;
+    transition: transform 250ms;
+    
+}
+.menu-footer a:hover {
+    transform: translateY(-10px);
+     opacity: 100%;
+     color: currentColor;
 }
 .menu-footer a::after,
 .menu-footer a::before {
@@ -184,3 +192,9 @@ padding-top: 20px;
     text-decoration: underline;
 }
 
+.has-btn .btn.is-arrow {
+    all: unset;
+    cursor: pointer;
+    text-decoration: underline;
+    /* font-size: inherit; */
+}

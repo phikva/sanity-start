@@ -37,7 +37,7 @@
 
   h2,
   .is-h2 {
-    @apply m-0 md:text-25 font-normal leading-135;
+    @apply m-0 md:text-25 font-normal leading-135 lg:leading-140;
   }
 
   h3,
@@ -188,21 +188,25 @@ h4,
 a {
   .rc & {
     &:not(.btn) {
-      @apply hover:opacity-40;
+ 
+      @apply hover:opacity-100;
       /* background-image: linear-gradient(var(--pageText), var(--pageText)); */
       background-position: 0% 100%;
       background-repeat: no-repeat;
       background-size: 100% 1px;
-      
+      text-decoration-line: underline;
+    
     }
   }
 }
 
-.hero--content a {
+.hero--overlay a {
+
   .rc & {
     &:not(.btn) {
-      @apply hover:opacity-40 ;
+      @apply hover:opacity-40 no-underline ;
       
+     
     }
     
   }

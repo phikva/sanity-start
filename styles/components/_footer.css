@@ -6,7 +6,7 @@
   }
 
   &--block {
-    @apply flex pt-40 flex-col bg-pageBG text-left lg:text-left;
+    @apply flex flex-col bg-pageBG text-left lg:text-left;
   }
 
   .form {
@@ -14,7 +14,7 @@
   }
 
   .menu-footer {
-    @apply flex flex-col;
+    @apply flex flex-col xxs:mb-50 md:mb-0 ;
 
     a {
       @apply inline-block pb-10 text-20 hover:opacity-40 hover:cursor-pointer;
