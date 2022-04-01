@@ -22,3 +22,9 @@ body {
 
 
 }
+
+.section:not(:first-of-type) {
+  @apply xxs:mt-30 md:mt-0 ;
+
+
+}

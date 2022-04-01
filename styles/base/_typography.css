@@ -14,11 +14,11 @@
   }
 
   body {
-    @apply bg-pageBG text-pageText font-Neue leading-100;
+    @apply bg-pageBG text-pageText font-Neue-text leading-100;
   }
 
   p {
-    @apply mb-20 mt-0 text-14 leading-150;
+    @apply mb-20 mt-0 text-13 leading-150;
   }
 
   strong {
@@ -37,7 +37,7 @@
 
   h2,
   .is-h2 {
-    @apply xxs:text-19 m-0 md:text-25 font-normal leading-135;
+    @apply m-0 md:text-25 font-normal leading-135;
   }
 
   h3,

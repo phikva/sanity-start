@@ -11,7 +11,7 @@ const Hero = ({ data = {} }) => {
     <section className="hero">
       {content && (
         <div className="hero--overlay">
-          <div className="hero--content">
+          <div className="w-full max-w-5xl mx-auto text-left text-pageText absolute bottom-0">
             <BlockContent blocks={content} />
           </div>
         </div>
@@ -19,10 +19,10 @@ const Hero = ({ data = {} }) => {
 
       {bgType === 'video' && (
         <>
-          <div className="hero--bg is-desktop">
+          <div className="hidden sm:block">
             <VideoLoop title={video.title} id={video.id} />
           </div>
-          <div className="hero--bg is-mobile">
+          <div className="sm:hidden">
             <VideoLoop title={video.title} id={video.id} />
           </div>
         </>

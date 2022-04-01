@@ -1,9 +1,27 @@
-@import "tailwindcss/base";
-@import "tailwindcss/components";
-@import "tailwindcss/utilities";
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
 
 @layer base {
-    html {
-      font-family: Neue Haas Grotesk Display Pro, sans-serif;
-    }
+  html {
+    font-family: Neue Haas Grotesk Display Pro, sans-serif;
   }
+}
+
+@layer components {
+  .hero {
+    @apply grid relative overflow-hidden xs:min-h-fit lg:xs:h-screen;
+    min-height: calc(var(--vh, 1vh) * 50);
+    max-height: 95vh;
+  }
+
+  .hero--overlay {
+    @apply z-2 flex flex-col justify-center;
+    grid-area: 1/-1;
+  }
+
+  .hero--bg {
+    @apply relative w-full  h-full;
+    grid-area: 1/-1;
+  }
+}

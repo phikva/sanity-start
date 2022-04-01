@@ -26,6 +26,7 @@
     padding: 0;
     margin-top: 1rem;
     /* font-size:  initial; */
+    font-weight:400;
 }
 
 .btn.is-arrow::after,
@@ -108,6 +109,7 @@
     display: inline-block;
 font-size: 20px;
 text-decoration-line: underline;
+padding-top: 20px;
 }
 
 /* arrow icon mobile secondary link*/
@@ -160,7 +162,7 @@ text-decoration-line: underline;
     display: inline-block;
 font-size: 20px;
 text-decoration-line: underline;
-padding-top: 0.8rem;
+padding-top: 20px;
 }
 .menu-mobile--secondary li:last-child a::before,
 .menu-mobile--secondary li:last-child a::after {
@@ -170,7 +172,15 @@ padding-top: 0.8rem;
 
 #MATKREATØR {
     font-weight: 600;
+    /* font-family: inherit; */
+    
 }
 #Leopold_Prytz_Roze {
-    font-weight: 100;
+    font-family: inherit;
+    /* font-weight: 100; */
 }
+
+.creator {
+    text-decoration: underline;
+}
+

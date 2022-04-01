@@ -192,7 +192,7 @@ a[href="#content"].skip-link {
 
       a,
       button {
-        @apply block  text-19 leading-150  lowercase;
+        @apply block  text-19 font-Neue leading-150  lowercase;
       }
     }
   }
