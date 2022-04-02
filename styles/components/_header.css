@@ -185,7 +185,7 @@ a[href="#content"].skip-link {
       @apply flex;
 
       li {
-        @apply ml-40;
+        @apply ml-20;
       }
 
       button {
@@ -202,7 +202,7 @@ a[href="#content"].skip-link {
         }
       }
     }
-    .is-active a {
+    .is-active {
       text-decoration-line: underline !important;
     }
   }
@@ -242,7 +242,7 @@ a[href="#content"].skip-link {
         @apply p-0 lowercase;
       }
       .is-active a {
-        text-decoration-line: underline !important;
+        /* opacity: 0.5; */
       }
 
       &--primary {

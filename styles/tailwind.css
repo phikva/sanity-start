@@ -6,7 +6,7 @@
 
 @layer base {
   html {
-    font-family: Neue Haas Grotesk Display Pro, sans-serif;
+    font-family: Neue Haas Grotesk text Pro, sans-serif;
   }
 }
 
@@ -37,7 +37,7 @@
 }
 
 .hero .rc {
-  width: fit-content;
+  /* width: fit-content; */
   transition: transform 250ms;
 }
 

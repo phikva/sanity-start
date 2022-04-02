@@ -18,8 +18,9 @@
   }
 
   p {
-    @apply mb-20 mt-0 text-13 leading-150;
+    @apply mb-10 mt-0 text-13 leading-150;
   }
+
 
   strong {
     @apply font-semibold;
@@ -32,30 +33,30 @@
   /* Headlines */
   h1,
   .is-h1 {
-    @apply  m-0 text-25 font-normal ;
+    @apply  m-0 my-10 text-25 font-normal ;
   }
 
   h2,
   .is-h2 {
-    @apply m-0 md:text-25 font-normal leading-135 lg:leading-140;
+    @apply m-0 my-10  md:text-25 font-normal leading-135 lg:leading-140;
   }
 
   h3,
   .is-h3 {
-    @apply xxs:text-12 m-0 md:text-15 font-normal;
+    @apply xxs:text-14 m-0 my-10  md:text-19 font-normal leading-135;
   }
 
   h4,
   .is-h4 {
-    @apply m-0 text-13 font-normal leading-135;
+    @apply m-0 text-13 mt-10 md:my-10  font-normal leading-135;
   }
 
   h5 {
-    @apply m-0 text-13 font-normal leading-125;
+    @apply m-0 text-13 my-10  font-normal leading-125;
   }
 
   h6 {
-    @apply m-0 text-13 font-normal leading-125;
+    @apply m-0 text-13 my-10  font-normal leading-125;
   }
 
   /* Links */
@@ -74,7 +75,7 @@
 
   /* Misc. */
   hr {
-    @apply mt-60 mx-0 border-opacity-10 h-1 bg-pageBG;
+    @apply md:mt-60 mx-0 border-opacity-10 h-1 bg-pageBG;
   }
   
   ::-moz-selection {
@@ -114,7 +115,7 @@ details {
   }
 }
 p:first-of-type {
-  @apply mb-0;
+  @apply mt-10;
 }
 p {
   &:not(:first){
@@ -144,7 +145,7 @@ ul {
 h1,
 .is-h1 {
   &:not(:last-child) {
-    @apply mb-16;
+    /* @apply mb-16; */
   }
 
   &.has-btn {
@@ -167,21 +168,21 @@ h1,
 h2,
 .is-h2 {
   &:not(:last-child) {
-    @apply mb-16;
+    /* @apply mb-16; */
   }
 }
 
 h3,
 .is-h3 {
   &:not(:last-child) {
-    @apply mb-16;
+    /* @apply mb-16; */
   }
 }
 
 h4,
 .is-h4 {
   &:not(:last-child) {
-    @apply mb-24;
+    /* @apply mb-24; */
   }
 }
 
@@ -199,16 +200,20 @@ a {
     }
   }
 }
-
+.hero--overlay {
+  h2,h3,h4 {
+    margin-bottom: 0 !important;
+  }
+}
 .hero--overlay a {
 
   .rc & {
     &:not(.btn) {
-      @apply hover:opacity-40 no-underline ;
+      @apply hover:opacity-40 no-underline;
       
      
     }
-    
+  
   }
 }
 .hero--content .btn.is-arrow {
