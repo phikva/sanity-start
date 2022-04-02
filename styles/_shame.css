@@ -136,7 +136,7 @@ padding-top: 20px;
     border: none;
     text-decoration-line: underline;
     padding: 0;
-    font-size:  initial;
+    font-size:  1.8rem !important;
     font-weight: 600;
 }
 .menu-mobile--secondary a::after,
@@ -168,7 +168,7 @@ padding-top: 20px;
 .menu-mobile--secondary li:last-child a {
     all: unset;
     display: inline-block;
-font-size: 20px;
+font-size: 20px !important;
 text-decoration-line: underline;
 padding-top: 20px;
 }

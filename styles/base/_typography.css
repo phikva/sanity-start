@@ -43,7 +43,7 @@
 
   h3,
   .is-h3 {
-    @apply xxs:text-14 m-0 my-10  md:text-19 font-normal leading-135;
+    @apply text-14 m-0 my-10  md:text-19 font-normal leading-135;
   }
 
   h4,
