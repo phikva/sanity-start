@@ -10,7 +10,7 @@ body {
 }
 
 .section {
-  @apply relative px-10 pt-10  md:py-0 md:pt-10;
+  @apply relative px-10 pt-10  md:py-0;
 
   &--content {
     @apply mx-auto;

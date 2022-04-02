@@ -14,10 +14,10 @@
   }
 
   .menu-footer {
-    @apply flex flex-col xxs:mb-50 md:mb-0 ;
+    @apply flex flex-col xxs:mb-20 md:mb-0 ;
 
     a {
-      @apply inline-block pb-10 text-20 hover:opacity-40 hover:cursor-pointer;
+      @apply text-18 inline-block pb-10 md:text-19 hover:opacity-40 hover:cursor-pointer;
     }
   }
 
