@@ -179,8 +179,10 @@ padding-top: 20px;
 /* logo text */
 
 #MATKREATØR {
-    font-weight: 600;
-    /* font-family: inherit; */
+    @apply font-Neue font-bold;
+    /* font-weight: 600; */
+   
+    font-family: inherit;
     
 }
 #Leopold_Prytz_Roze {
