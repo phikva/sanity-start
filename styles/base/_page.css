@@ -10,11 +10,16 @@ body {
 }
 
 .section {
-  @apply relative px-10 pt-10  md:py-0;
+  @apply relative px-10 pt-10  md:py-0 ;
+  
 
   &--content {
-    @apply mx-auto;
+    @apply mx-auto ;
   }
+ 
+}
+.grid {
+  /* @apply snap-start; */
 }
 
 .section:first-of-type {

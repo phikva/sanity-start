@@ -28,10 +28,10 @@
   }
 
   .has-indicator {
-    &::before {
+    /* &::before {
       @apply inline-block mr-8 rounded-full w-10 h-10;
       content: "";
-    }
+    } */
 
     &.is-open,
     .is-open &,

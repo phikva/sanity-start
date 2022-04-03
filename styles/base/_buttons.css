@@ -1,7 +1,8 @@
 .btn {
   /* default style button */
-  @apply clean-btn inline-block relative px-20 py-9 text-center rounded-full border font-sans font-semibold text-12 leading-125 transition-colors;
+  @apply clean-btn inline-block relative px-20 py-9 text-center font-sans font-semibold text-12 leading-125 transition-colors;
   transition: transform 250ms;
+  border-radius: 10px;
   /* default: hover */
   &:not(.is-primary):not(.is-white):not(.is-text):not(.is-disabled):not(.is-soldout) {
     &.is-active,
@@ -15,7 +16,7 @@
 
   /* primary style button */
   &.is-primary {
-    @apply bg-pageText border-pageText text-pageBG;
+    @apply bg-transparent border-pageText border-2 rounded-none text-pageText;
   }
 
 
@@ -61,7 +62,7 @@
     @apply bg-pageBG text-current;
 
     &::after {
-      @apply absolute -inset-1 bg-pageBG rounded-full opacity-50;
+      @apply absolute -inset-1 bg-pageBG  opacity-50;
       content: "";
     }
   }
@@ -115,7 +116,7 @@
 
   /* white style button */
   &.is-white {
-    @apply bg-white border-white text-black;
+    @apply bg-white border-white border-2 rounded-none text-pageText text-black;
 
     /* disabled button state */
     &.is-disabled,
