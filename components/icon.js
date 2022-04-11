@@ -5,28 +5,52 @@ const getIcon = (name, color) => {
     case 'Logo':
       return (
         <>
-      
-            <text
+          <text
               id="Leopold_Prytz_Roze"
               data-name="Leopold Prytz Roze"
               transform="translate(1 45)"
-              font-size="15"
-              font-family="NHaasGroteskDSPro-55Rg, Neue Haas Grotesk Display Pro"
+              font-size="18"
+              font-family="NHaasGroteskDSPro-55Rg, Neue Haas Grotesk text Pro"
             >
               <tspan x="0" y="0">
                 Leopold Prytz Roze
               </tspan>
             </text>
             <text
-              id="MATKREATØR"
+              id="KOKK_MATKREATØR"
+              data-name="KOKK &amp; MATKREATØR"
               transform="translate(0 25)"
-              font-size="30"
+              font-size="25"
               font-family="NHaasGroteskDSPro-75Bd, Neue Haas Grotesk Display Pro"
             >
               <tspan x="0" y="0">
-                MATKREATØR
+              KOKK &amp; MATKREATØR
               </tspan>
             </text>
+
+         
+              {/* <text
+                id="Leopold_Prytz_Roze"
+                data-name="Leopold Prytz Roze"
+                transform="translate(-19498 -149)"
+                font-size="18"
+                font-family="NHaasGroteskTXPro-55Rg, Neue Haas Grotesk Text Pro"
+              >
+                <tspan x="0" y="0">
+                  Leopold Prytz Roze
+                </tspan>
+              </text>
+              <text
+                id="KOKK_MATKREATØR"
+                data-name="KOKK &amp; MATKREATØR"
+                transform="translate(-19499 -176)"
+                font-size="30"
+                font-family="NHaasGroteskDSPro-75Bd, Neue Haas Grotesk Display Pro"
+              >
+                <tspan x="0" y="0">
+                  KOKK &amp; MATKREATØR
+                </tspan>
+              </text> */}
          
         </>
       )

@@ -79,7 +79,7 @@ a[href="#content"].skip-link {
 }
 
 .menu-toggle {
-  @apply sm:hidden absolute top-12 right-0 z-6 clean-btn p-0 bg-transparent text-pageText;
+  @apply  md:hidden absolute top-16 sm:top-5 right-0 z-6 clean-btn p-0 bg-transparent text-pageText ;
 
   .is-overlay:not(.has-bg) & {
     @apply transition-colors duration-300;
@@ -171,7 +171,7 @@ a[href="#content"].skip-link {
 
 .main-navigation {
   &--desktop {
-    @apply hidden sm:flex justify-between items-center absolute inset-0;
+    @apply hidden md:flex justify-between items-center absolute inset-0;
 
     .menu-left,
     .menu-right {
@@ -208,7 +208,7 @@ a[href="#content"].skip-link {
   }
 
   &--mobile {
-    @apply sm:hidden flex justify-end items-center absolute inset-0;
+    @apply md:hidden flex justify-end items-center absolute inset-0;
 
     .menu-mobile {
       @apply fixed top-0 left-0 w-full overflow-y-auto h-screen z-5 flex flex-col bg-pageBG text-pageText;

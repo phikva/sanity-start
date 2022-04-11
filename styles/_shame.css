@@ -178,16 +178,17 @@ padding-top: 20px;
 }
 /* logo text */
 
-#MATKREATØR {
-    @apply font-Neue font-bold;
-    /* font-weight: 600; */
-   
-    font-family: inherit;
+#KOKK_MATKREATØR {
+    @apply font-Neue font-bold text-16 sm:text-19;
+    font-weight: 600;
+  
+    /* font-family: inherit; */
     
 }
 #Leopold_Prytz_Roze {
+    @apply text-10 sm:text-11;
     font-family: inherit;
-    /* font-weight: 100; */
+    font-weight: 100;
 }
 
 .creator {
