@@ -186,7 +186,7 @@ padding-top: 20px;
     
 }
 #Leopold_Prytz_Roze {
-    @apply text-10 sm:text-11;
+    @apply text-11 sm:text-11;
     font-family: inherit;
     font-weight: 100;
 }

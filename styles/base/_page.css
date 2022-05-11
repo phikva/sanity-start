@@ -4,9 +4,11 @@ html {
     @apply cursor-wait !important;
   }
 }
-
+html {
+  @apply bg-pageBG;
+}
 body {
-  @apply flex flex-col;
+  @apply flex flex-col bg-pageBG;
 }
 
 .section {
