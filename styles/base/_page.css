@@ -12,7 +12,7 @@ body {
 }
 
 .section {
-  @apply relative px-10 pt-10  md:py-0 ;
+  @apply  relative px-20 pt-40  md:py-0 md:pt-20;
   
 
   &--content {

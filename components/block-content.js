@@ -33,7 +33,7 @@ const Content = ({ blocks, className }) => {
       transition: {
         delay: 0.3,
         ease: [0.6, 0.01, -0.05, 0.95],
-        duration: 1.2,
+        duration: 0.8,
       },
     }}
   >

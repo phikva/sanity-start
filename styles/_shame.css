@@ -24,7 +24,7 @@
     border: none;
     text-decoration-line: underline;
     padding: 0;
-    /* margin-top: 1rem; */
+    margin-top: 1rem;
     /* font-size:  initial; */
     /* font-size: inherit; */
     font-weight:400;
@@ -71,7 +71,7 @@
     box-sizing: border-box;
     position: relative;
     transform: scale(var(--ggs,1));
-
+    
     border-radius: 0;
     border: none;
     text-decoration-line: underline;
@@ -136,7 +136,7 @@ padding-top: 20px;
     border: none;
     text-decoration-line: underline;
     padding: 0;
-    font-size:  1.8rem !important;
+    font-size:  1.3rem !important;
     font-weight: 600;
 }
 .menu-mobile--secondary a::after,
@@ -145,22 +145,22 @@ padding-top: 20px;
     display: block;
     box-sizing: border-box;
     position: absolute;
-    right: -3rem;
+    right: -2rem;
 }
 .menu-mobile--secondary a::after {
-    width: 1.5rem;
-    height: 1.5rem;
+    width: 1rem;
+    height: 1rem;
     border-top: 2px solid;
     border-right: 2px solid;
     transform: rotate(0deg);
-    bottom: 10px;
-    right: -2.85rem;
+    bottom: 0px;
+    right: -2rem;
 }
 .menu-mobile--secondary a::before {
     transform: rotate(135deg);
-    width: 2rem;
+    width: 1rem;
     height: 2px;
-    bottom: 1.25rem;
+    bottom: .5rem;
     background: currentColor
 }
 
@@ -168,7 +168,7 @@ padding-top: 20px;
 .menu-mobile--secondary li:last-child a {
     all: unset;
     display: inline-block;
-font-size: 20px !important;
+font-size: 16px !important;
 text-decoration-line: underline;
 padding-top: 20px;
 }
@@ -186,7 +186,7 @@ padding-top: 20px;
     
 }
 #Leopold_Prytz_Roze {
-    @apply text-11 sm:text-11;
+    @apply text-12 sm:text-12;
     font-family: inherit;
     font-weight: 100;
 }

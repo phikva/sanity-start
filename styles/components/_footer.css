@@ -2,7 +2,7 @@
   @apply relative overflow-hidden;
   
   &--grid {
-    @apply grid p-10 sm:grid-cols-1 md:grid-cols-2;
+    @apply grid p-20 sm:grid-cols-1 md:grid-cols-2;
   }
 
   &--block {

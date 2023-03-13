@@ -6,16 +6,21 @@
 
 @layer base {
   html {
+    width: 100%;
+    margin: 0 auto;
     font-family: Neue Haas Grotesk text Pro, sans-serif;
   }
   body {
    
   }
+  main {
+    
+  }
 }
 
 @layer components {
   .hero {
-    @apply grid relative overflow-hidden xs:min-h-fit lg:xs:h-screen;
+    @apply mt-30 grid relative overflow-hidden xs:min-h-fit lg:xs:h-screen;
     min-height: calc(var(--vh, 1vh) * 50);
     max-height: 95vh;
   }

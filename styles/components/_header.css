@@ -18,7 +18,7 @@ a[href="#content"].skip-link {
   }
   
   &--inner {
-    @apply relative px-10 sm:py-10 md:py-10 lg:py-10 z-2 bg-transparent ;
+    @apply relative px-20 sm:py-20 md:py-20 lg:py-20 z-2 bg-transparent ;
 
     .is-overlay & {
       @apply bg-transparent transition-colors duration-300;
@@ -91,7 +91,7 @@ a[href="#content"].skip-link {
 }
 
 .hamburger {
-  @apply relative flex flex-col items-center justify-center mx-auto w-25 z-5;
+  @apply relative flex flex-col items-center justify-center mx-auto w-25 z-5 pt-5;
 
   &::before,
   &::after {
@@ -228,7 +228,7 @@ a[href="#content"].skip-link {
       }
 
       &--inner {
-        @apply flex-1 flex flex-col px-10 py-10;
+        @apply flex-1 flex flex-col px-20 py-20;
         /* padding-top: calc(var(--headerHeight, 10rem) + 2.5rem); */
       }
 
@@ -247,7 +247,7 @@ a[href="#content"].skip-link {
 
       &--primary {
         ul {
-          @apply flex flex-col absolute top-10;
+          @apply flex flex-col absolute top-50;
         }
         li {
           @apply mb-5;
@@ -255,7 +255,7 @@ a[href="#content"].skip-link {
 
         a,
         button {
-          @apply text-20 leading-120;
+          @apply text-24 leading-120;
           
         }
       }

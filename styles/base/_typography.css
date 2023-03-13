@@ -18,9 +18,9 @@
   }
 
   p {
-    @apply mb-10 mt-0 text-13 leading-150;
+    @apply sm:mb-20 text-10 md:mb-10 mt-0 md:text-13 leading-150;
   }
-
+  
 
   strong {
     @apply font-semibold;
@@ -48,7 +48,7 @@
 
   h4,
   .is-h4 {
-    @apply m-0 text-13 mt-10 md:my-10  font-normal leading-135;
+    @apply m-0 text-15 md:text-20 mt-10 md:my-10  font-normal leading-135;
   }
 
   h5 {
@@ -125,7 +125,7 @@ p {
 
 ul {
   .rc & {
-    @apply pl-10 text-12 mb-10 leading-150;
+    @apply pl-10 text-10 mb-10 leading-150;
 
     &:not(:last-child) {
       @apply my-10;
